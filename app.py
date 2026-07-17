@@ -18,7 +18,7 @@ def execute_command(command):
 
         if not exe_exists:
             compile_result = subprocess.run(
-                ["g++", "main.cpp", "-o", "orderbook"], 
+                ["g++", "src/main.cpp", "-o", "orderbook"],
                 capture_output=True,
                 text=True
             )
@@ -609,7 +609,7 @@ with tab6:
     ---
     ## 📄 Test Cases
                 
-    If you want testcase examples, you can refer to the `testcases.txt` file in the repository. It contains various scenarios to help you understand how the system behaves under different conditions.
+    If you want testcase examples, you can refer to the `tests/testcase.txt` file in the repository. It contains various scenarios to help you understand how the system behaves under different conditions.
 
     ---
     """)
